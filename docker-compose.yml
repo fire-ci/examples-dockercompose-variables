@@ -5,4 +5,4 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        graphqlcreds: $GRAPHQL_PRO_CREDENTIALS
+        graphqlcreds: ${GRAPHQL_PRO_CREDENTIALS}
