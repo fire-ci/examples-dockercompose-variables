@@ -2,7 +2,6 @@ version: '3.7'
 services:
   example:
     build:
-      context: .
       dockerfile: Dockerfile
-      environment:
-        graphqlcreds: ${GRAPHQL_PRO_CREDENTIALS}
+      args:
+        graphqlcreds: $GRAPHQL_PRO_CREDENTIALS
